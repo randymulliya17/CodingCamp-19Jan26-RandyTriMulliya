@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List Randy Mulliya</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>To-Do List Randy Mulliya</h1>
+
+    <!-- FORM INPUT -->
+    <form id="todo-form" class="form">
+        <input type="text" id="todo-input" placeholder="Tambah tugas..." />
+        <input type="date" id="date-input" />
+        <button type="submit" class="btn-add">Tambah</button>
+    </form>
+
+    <!-- FILTER & DELETE ALL -->
+    <div class="controls">
+        <button id="filter-btn">Filter</button>
+        <button id="delete-all-btn">Hapus Semua</button>
+    </div>
+
+    <!-- TABLE TODO -->
+    <table>
+        <thead>
+            <tr>
+                <th>Tugas</th>
+                <th>Tanggal</th>
+                <th>Status</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="todo-list">
+            <tr>
+                <td colspan="4" class="empty">Tidak ada tugas</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
